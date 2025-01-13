@@ -1,0 +1,249 @@
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the top */
+.top {
+  background-color: #ddd;
+  padding: 10px;
+  height: 180px;
+  text-align: right;
+}
+
+/* Style the content */
+.conatiner {
+  background-color: #9b8e8e;
+  padding: 10px;
+  height: 600px;
+  width: 90px;
+}
+
+
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  color: #EADDC4;
+  text-align: center;
+  font-size: .8em;
+  padding: 1em;
+}
+
+#logo {
+    position:absolute;
+    top: 10px;
+    left: 15px;
+  }
+
+/* remember to highlight inserts somehow! */
+ins{
+  text-decoration:none;
+}
+del{
+  text-decoration:line-through;
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+ol,ul{
+  list-style:none;
+}
+blockquote,q{
+  quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+  content:’’;
+  content:none;
+}
+
+/*------------------------------------*\
+  $MAIN
+\*------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Didact Gothic";
+}
+
+
+/* Typography */
+
+h1 {
+  font-size: 50px;
+  color: #4b4242;
+  font-weight: 190;
+  flex: 1;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h5 {
+  font-weight: 500;
+  line-height: 1.7em;
+  
+}
+
+h6 {
+  color: #666;
+  font-size: 14px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  font-size: 22px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Product Layout */
+
+.product-filter {
+  display: flex;
+  padding: 10px 0px;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.sort {
+  display: flex;
+  align-self: flex-end;
+}
+
+.collection-sort {
+display: flex;
+  flex-direction: column;
+}
+
+.collection-sort:first-child {
+  padding-right: 20px;
+}
+
+label {
+  color: #666;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  
+  padding: 5%;
+  flex: 1 23%;
+
+  background-color: #FFF;
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+}
+
+.product-image img {
+  width: 100%;
+}
+.product-info {
+  margin-top: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+/**Container Start**/
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(133, 120, 118);
+  
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 280px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+/**Container End**/
+
+
+
+
+@media ( max-width: 920px ) {
+  
+  .product-card {
+      flex: 1 21%;
+  }
+  
+  .products .product-card:first-child, 
+  .products .product-card:nth-child(2) {
+      flex: 2 46%;
+  }
+  
+}
+
+@media ( max-width: 600px ) {
+  
+  .product-card {
+      flex: 1 46%;
+  }
+  
+}
+
+@media ( max-width: 480px ) {
+  
+  h1 {
+      margin-bottom: 20px;
+  }
+  
+  .product-filter {
+      flex-direction: column;
+  }
+  
+  .sort {
+      align-self: flex-start;
+  }
+  
+}
+
+
